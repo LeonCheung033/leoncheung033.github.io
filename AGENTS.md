@@ -80,6 +80,16 @@ All seven `test/integration_*.sh` scripts are gated by `unit-tests.yml`; run the
 - Keep docs aligned with v1 ownership, and keep each fact in one place — link rather than restate.
 - If you create or keep local overrides of plugin-owned files, run `bundle exec al-folio upgrade overrides audit` and commit `.al-folio-overrides.yml` after review.
 
+## Site-owner publishing boundary
+
+This repository powers the public site at `leoncheung033.github.io`.
+
+- Local editing, dependency installation, builds, and previews are allowed.
+- Every push or publication change requires Leon Cheung's explicit
+  authorization at the time of that action.
+- Keep the al-folio source remote named `upstream`; it is read-only reference
+  material and must never receive personal-site commits.
+
 ## Further reading
 
 - [`docs/ARCHITECTURE.md`](docs/ARCHITECTURE.md) — how the starter and gems fit together, silent failure modes, the v1 config contract, local overrides.
